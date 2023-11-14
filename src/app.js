@@ -32,6 +32,7 @@ document.addEventListener('keydown', function (event) {
     handleKeyPress(event.key);
 });
 
+// Klavyaturani tanimasi ucun. Bunu gpt yazmadi amma :D
 function handleKeyPress(key) {
     switch (key) {
         case '0':
