@@ -19,3 +19,11 @@ function calculateResult() {
         resultField.value = 'Error';
     }
 }
+
+function calculateSquareRoot() {
+    resultField.value = Math.sqrt(eval(resultField.value));
+}
+
+function calculateSquare() {
+    resultField.value = Math.pow(eval(resultField.value), 2);
+}

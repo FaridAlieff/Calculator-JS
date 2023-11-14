@@ -10,37 +10,42 @@
 </head>
 <body>
 
-<div class="calculator">
-    <input type="text" id="result" class="form-control mb-2" readonly>
-    <div class="row">
-        <button class="btn btn-light double" onclick="clearResult()">C</button>
-        <button class="btn btn-light double" onclick="deleteLast()">DEL</button>
-        <button class="btn btn-operator" onclick="appendToResult('/')">/</button>
+    <div class="calculator">
+        <input type="text" id="result" class="form-control mb-2" readonly>
+        <div class="row">
+            <button class="btn btn-light double" onclick="clearResult()">C</button>
+            <button class="btn btn-light double" onclick="deleteLast()">DEL</button>
+            <button class="btn btn-operator" onclick="appendToResult('/')">/</button>
+            <button class="btn btn-light" onclick="calculateSquareRoot()">√</button>
+            <button class="btn btn-light" onclick="calculateSquare()">x²</button>
+        </div>
+        <div class="row">
+            <button class="btn btn-light" onclick="appendToResult('7')">7</button>
+            <button class="btn btn-light" onclick="appendToResult('8')">8</button>
+            <button class="btn btn-light" onclick="appendToResult('9')">9</button>
+            <button class="btn btn-operator" onclick="appendToResult('*')">*</button>
+            <button class="btn btn-light" onclick="calculateSquare()">x²</button>
+        </div>
+        <div class="row">
+            <button class="btn btn-light" onclick="appendToResult('4')">4</button>
+            <button class="btn btn-light" onclick="appendToResult('5')">5</button>
+            <button class="btn btn-light" onclick="appendToResult('6')">6</button>
+            <button class="btn btn-operator" onclick="appendToResult('-')">-</button>
+            <button class="btn btn-light" onclick="calculateSquareRoot()">√</button>
+        </div>
+        <div class="row">
+            <button class="btn btn-light" onclick="appendToResult('1')">1</button>
+            <button class="btn btn-light" onclick="appendToResult('2')">2</button>
+            <button class="btn btn-light" onclick="appendToResult('3')">3</button>
+            <button class="btn btn-light double" onclick="appendToResult('0')">0</button>
+
+            <button class="btn btn-operator" onclick="appendToResult('+')">+</button>
+        </div>
+        <div class="row">
+            <button class="btn btn-light" onclick="appendToResult('.')">.</button>
+            <button class="btn btn-double btn-operator" onclick="calculateResult()">=</button>
+        </div>
     </div>
-    <div class="row">
-        <button class="btn btn-light" onclick="appendToResult('7')">7</button>
-        <button class="btn btn-light" onclick="appendToResult('8')">8</button>
-        <button class="btn btn-light" onclick="appendToResult('9')">9</button>
-        <button class="btn btn-operator" onclick="appendToResult('*')">*</button>
-    </div>
-    <div class="row">
-        <button class="btn btn-light" onclick="appendToResult('4')">4</button>
-        <button class="btn btn-light" onclick="appendToResult('5')">5</button>
-        <button class="btn btn-light" onclick="appendToResult('6')">6</button>
-        <button class="btn btn-operator" onclick="appendToResult('-')">-</button>
-    </div>
-    <div class="row">
-        <button class="btn btn-light" onclick="appendToResult('1')">1</button>
-        <button class="btn btn-light" onclick="appendToResult('2')">2</button>
-        <button class="btn btn-light" onclick="appendToResult('3')">3</button>
-        <button class="btn btn-operator" onclick="appendToResult('+')">+</button>
-    </div>
-    <div class="row">
-        <button class="btn btn-light double" onclick="appendToResult('0')">0</button>
-        <button class="btn btn-light" onclick="appendToResult('.')">.</button>
-        <button class="btn btn-double btn-operator" onclick="calculateResult()">=</button>
-    </div>
-</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
